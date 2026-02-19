@@ -16,17 +16,14 @@ int touchpin = 2;
 
  // TODO 2:
  // Create variable to store touch state
-
+ bool touchState = false;
 void setup() {
 
-    // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
 
-    // TODO 4:
-    // Configure touch pin as INPUT
+    Serial.begin(9600);
+    pinMode(touchpin, INPUT);
 
-    // TODO 5:
-    // Print system initialization message
+    Serial.println("Touch Detection System Initialized");
 }
 
 void loop() {
