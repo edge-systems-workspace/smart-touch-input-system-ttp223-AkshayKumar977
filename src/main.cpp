@@ -36,6 +36,5 @@ void loop() {
         Serial.println("Touch Not Detected");
     }
 
-    // TODO 8:
-    // Add small delay (200–500ms)
+    delay(500);
 }
